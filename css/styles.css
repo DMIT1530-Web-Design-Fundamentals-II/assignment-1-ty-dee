@@ -1,0 +1,532 @@
+body {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  text-align: center;
+  padding: 1rem;
+}
+
+.page-header {
+  flex-direction: column;
+}
+
+.title-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.box {
+  background-color: white;
+  padding: 0.5rem;
+  align-content: center;
+  border-radius: 0.25rem;
+  margin: 1rem;
+  text-align: center;
+  text-wrap: wrap;
+  width: calc(100% / 3);
+}
+
+img {
+  width: 100%;
+}
+
+.details {
+  margin-left: 1rem;
+}
+
+.details div {
+  color: white;
+  padding-right: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.stats {
+  display: flex;
+}
+
+.wind {
+  background-color: #0caf0c;
+}
+
+.hydro-tidal {
+  background-color: #000068;
+}
+
+.gas-oil {
+  background-color: #4b4b4b;
+}
+
+.biomass {
+  background-color: #0510a0;
+}
+
+.fuel {
+  background-color: #dbdb1a;
+}
+
+.imports {
+  background-color: #1e0c6f;
+}
+
+.heading-links {
+  display: flex;
+  padding: 0.25rem;
+  background-color: hsl(240, 80%, 30%);
+}
+
+a {
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.head {
+  color: white;
+  border-left: medium solid #ffffff;
+  justify-content: space-evenly;
+}
+
+.page-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  color: hsl(240, 67%, 26%);
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  background-color: hsl(202, 83%, 90%);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: hsl(202, 83%, 90%);
+  padding: 1rem 0;
+}
+
+footer p {
+  margin-left: 0.5rem;
+}
+
+.energy-stats {
+  text-align: center;
+}
+
+.details {
+  text-align: start;
+}
+
+.hero-links-home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(100% / 2 - 1rem);
+  margin: 0.25rem;
+  padding: 0.25rem;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: hsl(240, 80%, 30%);
+}
+
+.card h3 {
+  color: white;
+}
+
+.card2 {
+  background-color: white;
+  font-size: 0.75rem;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.home-content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.your-home-container {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.home-bottom, .your-home-container h2 {
+  text-align: center;
+  text-wrap: wrap;
+  width: 75%;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.lorem-text {
+  text-align: start;
+}
+
+.community-card {
+  color: white;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.title h3 {
+  margin-left: 1rem;
+}
+
+.warm-home {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: start;
+}
+
+button {
+  background-color: hsl(240, 78%, 30%);
+  color: white;
+  margin: 1rem;
+  padding: 0.25rem;
+  width: 90%;
+}
+
+.numbers {
+  text-align: center;
+}
+
+.pre-footing {
+  background-image: url('../dmit-assignment-1-assets/building-stronger.webp');
+  background-size: cover;
+  height: calc(100vh / 3);
+  padding: 1rem 0;
+}
+
+.card3 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 75%;
+  height: calc(100vh / 3 - 2rem);
+  background-color: hsl(0, 0%, 100%);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-left: 10%;
+}
+
+.community-h2 {
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Hover States */
+
+.footer-links a:hover {
+  color: #03b403;
+}
+
+.power-btn:hover {
+  background-color: #aaddee;
+  color: #0000ff;
+}
+
+.box:hover {
+  background-color: #0000ae;
+  color: white;
+}
+
+.title-links a:hover {
+  color: #03b403;
+  text-decoration: underline;
+}
+
+.lorem-text a:hover {
+  color: #03b403;
+}
+
+.title:hover {
+  transform: scale(1.5);
+}
+
+.head:hover {
+  background-color: #03b403;
+}
+
+.card3 a:hover {
+  color: #03b403;
+}
+
+/* Media Queries */
+
+/* Medium size (800px) */
+
+@media (min-width: 800px) {
+  
+  .heading-links{
+    justify-content: space-between;
+  }
+
+  .page-header {
+    flex-direction: row;
+  }
+
+  .title-links {
+    margin: unset;
+    margin-left: 20%;
+  }
+  
+  .head {
+    background-color: hsl(240, 80%, 30%);
+    padding: 1rem 0.75rem;
+    text-align: center;
+    align-content: center;
+  }
+
+  .content {
+    flex-direction: row;
+    width: 90%;
+    align-items: start;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 4);
+    justify-content: center;
+    align-content: space-around;
+    text-wrap: wrap;
+  }
+
+  .energy-stats {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    margin: auto;
+  }
+
+  .stats {
+    flex-direction: row;
+  }
+
+  .power-btn {
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 40%;
+  }
+
+  .card {
+    width: calc(100% / 3 - 2rem);
+  }
+
+  .title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-energy {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .right-energy img {
+    height: 15vh;
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  .warm-home {
+    flex-direction: row;
+  }
+
+  .warm-home img {
+    height: 15vh;
+    margin-bottom: 2rem;
+  }
+
+  .home-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card2 {
+    width: calc(100% / 4 - 1rem);
+    padding: 2rem 1rem;
+  }
+
+  .community-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .community-card img {
+    height: 15vh;
+  }
+
+  .community-card .title {
+    text-align: start;
+  }
+
+  .card3 {
+    margin-left: 15%;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-links {
+    margin-left: 30%;
+  }
+
+}
+
+/* Large size (1300px) */
+
+@media (min-width: 1300px) {
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+
+  .energy-stats {
+    width: 40%;
+  }
+  
+  .community-container{
+    justify-content: center;
+  }
+
+  .heading-links {
+    justify-content: end;
+  }
+
+  .box {
+    width: 10%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .numbers {
+    background-color: hsl(0, 0%, 99%);
+    width: 30%;
+  }
+  
+  .hero-links-home {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .power-btn {
+    padding: 0.25rem 0;
+    width: 50%;
+  }
+  button {
+    width: 50%;
+  }
+
+  .card {
+    width: calc(100% / 3 - 0.75rem);
+    margin: 1rem 0;
+    font-size: 0.75rem;
+  }
+  
+  .title {
+    text-align: start;
+  }
+  
+  .card2 {
+    width: calc(100% / 3 - 1rem);
+    background-color: white;
+    font-size: 0.75rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card3 {
+    width: calc(100% / 3 - 2rem);
+    height: calc(100vh / 4);
+    margin-left: 50%;
+  }
+
+  .title h3 {
+    font-size: 0.75rem;
+  }
+  
+  .pre-footing {
+    height: calc(100vh / 3 - 2rem);
+  }
+
+  .home-bottom {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .title > h3 {
+    color: white;
+    margin-left: 0.5rem;
+  }
+  
+  .your-home-container {
+    padding-top: 1rem;
+    background-color: hsla(0, 0%, 90%, 0.531);
+  }
+  
+  .home-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .home-content img {
+    height: 20vh;
+  }
+
+  .card2 {
+    padding: 1rem 0.25rem;
+  }
+  
+  .title > img {
+    height: 15vh;
+  }
+
+  .title-links, .footer-links {
+    margin-left: 25%;
+  }
+}
